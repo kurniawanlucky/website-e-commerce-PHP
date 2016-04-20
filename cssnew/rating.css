@@ -1,0 +1,50 @@
+.rating {
+          overflow: hidden;
+          display: inline-block;
+          float: left;
+      }
+      .rating-input {
+          position: absolute;
+          left: 0;
+          top: -50px;
+      }
+      .rating:hover .rating-star-1:hover,
+      .rating:hover .rating-star-2:hover,
+      .rating:hover .rating-star-3:hover,
+      .rating:hover .rating-star-1:hover ~ .rating-star-1,
+      .rating:hover .rating-star-2:hover ~ .rating-star-2,
+      .rating:hover .rating-star-3:hover ~ .rating-star-3,
+      .rating-input:checked ~ .rating-star-1,
+      .rating-input:checked ~ .rating-star-2,
+      .rating-input:checked ~ .rating-star-3 {
+          background-position: 0 0;
+      }
+      .rating-star-1,
+      .rating:hover .rating-star-1 {
+          float: right;
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: url('../imgs/rating/star_merah.png') 0 -16px;
+      }
+      .rating-star-2,
+      .rating:hover .rating-star-2 {
+          float: right;
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: url('../imgs/rating/star_hijau.png') 0 -16px;
+      }
+      .rating-star-3,
+      .rating:hover .rating-star-3 {
+          float: right;
+          display: block;
+          width: 16px;
+          height: 16px;
+          background: url('../imgs/rating/star_biru.png') 0 -16px;
+      }
+
+/* Just for the demo */
+body {
+    margin: 20px;
+}
